@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
+const markdown = require("./generateMarkdown") //seperate file to create README template
 
 
 
@@ -50,3 +51,15 @@ console.log(questions);
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(),fileName), data)
 }
+
+
+//Initialize function
+function init() {
+    inquirer.prompt(questions)
+    .then (answers => {
+        writeToFile("README.md",markdown(answers))
+    })
+}
+
+init();
+
