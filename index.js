@@ -16,7 +16,7 @@ function init() {
     },
     {
         type: "input",
-        message: "Enter a Project description.",
+        message: "Enter a description of your Project.",
         name: "description",
     },
     {
@@ -26,24 +26,24 @@ function init() {
     },
     {
         type: "input",
-        message: "Enter any usage information.",
+        message: "What is this Project used for",
         name: "usage",
     },
     {
         type: "input",
-        message: "Enter any contribution guidelines.",
+        message: "List any contributors on your project.",
         name: "contribution",
     },
     {
         type: "input",
-        message: "Enter any test instructions.",
+        message: "Include any instructions for testing your Project.",
         name: "test",
     },
     {
         type: "list",
-        message: "Choose a license used for your project.", 
+        message: "Choose the appropriate license for your project.", 
         name: "license",
-        choices: ["GNU", "MIT", "Apache", "WTFPL"],
+        choices: ["GNU", "MIT", "Apache", "WTFPL", "Academic", "Mozilla", "Open"],
     },
     {
         type: "input",

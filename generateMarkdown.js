@@ -23,6 +23,11 @@ ${data.install}
 ## Usage
 ${data.usage}
 
+## License
+![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
+<br/>
+This application is covereved by the ${data.license} license.
+
 ## Contribution
 ${data.contribution}
 
@@ -33,10 +38,10 @@ ${data.test}
 ${data.license}
 
 ## Github
-${data.github}
+Link to my GitHub: [${data.github}](https://github.com/${data.github})<br/>
 
 ## E-mail
-${data.email}`
+Feel free to email me with any questions: ${data.email}`
 }
 
 module.exports = generateMarkdown;
