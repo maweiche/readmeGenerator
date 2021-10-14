@@ -57,8 +57,11 @@ function init() {
     },
 ])
 .then((response)=>{
-    return fs.writeFileSync(path.join(process.cwd(), "README.md"), markdown(response));
+    console.log("Your README was created successfully!");
+    return fs.writeFileSync(path.join(process.cwd(), "./output/README.md"), markdown(response))
+    
 });
+
 }
 
 init();

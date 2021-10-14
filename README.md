@@ -1,38 +1,64 @@
+# Project Title
 
-# a
+The goal of this project was to build a node.js application that generates a README.md file for the user, populated with their responeses regarding their repository.  Once the user iniatilizes the application and completes the questions, the README.md file will then be created in the output directory.
 
-![badge](https://img.shields.io/badge/license-WTFPL-brightgreen)</br>
 
-## Table of Contents
-1. [Description](#Description)
-2. [Installation](#Install)
-3. [Usage](#Usage)
-4. [Contributing](#Contribution)
-5. [Tests](#Tests)
-6. [License](#License)
-7. [GitHub](#Github)
-8. [E-mail](#E-mail)
+### User Story
+`AS A developer
+I WANT a README generator
+SO THAT I can quickly create a professional README for a new project`
 
-## Description
-a
+### Acceptance Criteria
+`GIVEN a command-line application that accepts user input
+WHEN I am prompted for information about my application repository
+THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+WHEN I enter my project title
+THEN this is displayed as the title of the README
+WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+WHEN I choose a license for my application from a list of options
+THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+WHEN I enter my GitHub username
+THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+WHEN I enter my email address
+THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+WHEN I click on the links in the Table of Contents
+THEN I am taken to the corresponding section of the README`
 
-## Install
-a
+### Prerequisites
 
-## Usage
-a
+`node.js`
 
-## Contribution
-a
 
-## Tests
-a
+### Installing
+
+`npm init`
+
+`npm install inquirer`
+
+
+## Built With
+
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## Deployed Link
+
+* [See Live Site](#)
+
+
+## Authors
+
+* **Matthew Weichel** 
+
+- [Link to Portfolio Site](#)
+- [Link to Github](https://github.com/)
+- [Link to LinkedIn](https://www.linkedin.com/)
+
 
 ## License
-WTFPL
 
-## Github
-a
+This project is licensed under the MIT License 
 
-## E-mail
-a
+## Acknowledgments
+
+* Hat tip to anyone whose code, libraries, packages, or UI was used  / inspired from
