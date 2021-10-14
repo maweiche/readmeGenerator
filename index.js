@@ -45,11 +45,10 @@ const questions = [
     },
 
 ];
-console.log(questions);
 
 //Write to file function
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(),fileName), data)
+function writeToFile(fileName, answers) {
+    return fs.writeFileSync(path.join(process.cwd(),fileName), answers)
 }
 
 
