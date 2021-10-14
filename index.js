@@ -26,7 +26,7 @@ function init() {
     },
     {
         type: "input",
-        message: "What is this Project used for",
+        message: "What is this Project used for?",
         name: "usage",
     },
     {
