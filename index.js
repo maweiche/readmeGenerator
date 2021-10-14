@@ -7,7 +7,7 @@ const markdown = require("./generateMarkdown") //seperate file to create README 
 //Initialize function
 function init() {
 
-//Question array
+//Call on inquirer to prompt user with message
  inquirer.prompt([
     {
         type: "input",

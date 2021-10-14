@@ -2,14 +2,18 @@
 
 The goal of this project was to build a node.js application that generates a README.md file for the user, populated with their responeses regarding their repository.  Once the user iniatilizes the application and completes the questions, the README.md file will then be created in the output directory.
 
+![Demo gif](./assets/demo.gif)
 
 ### User Story
-`AS A developer
+```
+AS A developer
 I WANT a README generator
-SO THAT I can quickly create a professional README for a new project`
+SO THAT I can quickly create a professional README for a new project
+```
 
 ### Acceptance Criteria
-`GIVEN a command-line application that accepts user input
+```
+GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 WHEN I enter my project title
@@ -23,7 +27,8 @@ THEN this is added to the section of the README entitled Questions, with a link 
 WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README`
+THEN I am taken to the corresponding section of the README
+```
 
 ### Prerequisites
 
@@ -33,8 +38,12 @@ THEN I am taken to the corresponding section of the README`
 ### Installing
 
 `npm init`
-
 `npm install inquirer`
+
+### Usage
+Open your terminal and locate file, then run
+`node index.js`
+
 
 
 ## Built With
@@ -43,16 +52,14 @@ THEN I am taken to the corresponding section of the README`
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://maweiche.github.io/readmeGenerator/)
 
 
 ## Authors
 
 * **Matthew Weichel** 
+- [Link to Github](https://github.com/maweiche)
 
-- [Link to Portfolio Site](#)
-- [Link to Github](https://github.com/)
-- [Link to LinkedIn](https://www.linkedin.com/)
 
 
 ## License
