@@ -4,9 +4,11 @@ const path = require("path");
 const markdown = require("./generateMarkdown") //seperate file to create README template
 
 
+//Initialize function
+function init() {
 
 //Question array
-const questions = [
+ inquirer.prompt([
     {
         type: "input",
         message: "What is your Project's Title?",
@@ -39,25 +41,24 @@ const questions = [
     },
     {
         type: "list",
-        message: "Choose a license for your application.", 
+        message: "Choose a license used for your project.", 
         name: "license",
-        choices: ["GNU", "MIT", "PDDL", "WTFPL"],
+        choices: ["GNU", "MIT", "Apache", "WTFPL"],
     },
-
-];
-
-//Write to file function
-function writeToFile(fileName, answers) {
-    return fs.writeFileSync(path.join(process.cwd(),fileName), answers)
-}
-
-
-//Initialize function
-function init() {
-    inquirer.prompt(questions)
-    .then (answers => {
-        writeToFile("README.md",markdown(answers))
-    })
+    {
+        type: "input",
+        message: "What is your GitHub username",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email",
+    },
+])
+.then((response)=>{
+    return fs.writeFileSync(path.join(process.cwd(), "README.md"), markdown(response));
+});
 }
 
 init();
