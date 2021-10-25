@@ -1,7 +1,7 @@
 # Project Title
 
 The goal of this project was to build a node.js application that generates a README.md file for the user, populated with their responeses regarding their repository.  Once the user iniatilizes the application and completes the questions, the README.md file will then be created in the output directory.
-
+* [See Live Video](https://watch.screencastify.com/v/9EzE45V0IxU67FcnkfsQ)
 ![Demo gif](./assets/demo.gif)
 
 ### User Story
